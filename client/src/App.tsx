@@ -1,7 +1,6 @@
 import "./App.css";
 import Blogs from "./components/blog/Blogs";
-import Footer from "./layouts/footer/Footer";
-import Header from "./layouts/header/Header";
+import MainLayout from "./layouts/MainLayout";
 import AuthPage from "./pages/AuthPage";
 import BlogDetailsPage from "./pages/BlogDetailsPage";
 import CartPage from "./pages/CartPage";
@@ -13,16 +12,16 @@ import ShopPage from "./pages/ShopPage";
 function App() {
   return (
     <>
-      <Header />
-      <HomePage />
-      {/* <ShopPage /> */}
-      {/* <ContactPage /> */}
-      {/* <AuthPage /> */}
-      {/* <CartPage /> */}
-      {/* <Blogs /> */}
-      {/* <BlogDetailsPage /> */}
-      {/* <ProductDetailsPage /> */}
-      <Footer />
+      <MainLayout>
+        <HomePage />
+        {/* <ShopPage /> */}
+        {/* <ContactPage /> */}
+        {/* <AuthPage /> */}
+        {/* <CartPage /> */}
+        {/* <Blogs /> */}
+        {/* <BlogDetailsPage /> */}
+        {/* <ProductDetailsPage /> */}
+      </MainLayout>
     </>
   );
 }
