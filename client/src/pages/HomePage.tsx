@@ -7,6 +7,8 @@ import Blogs from "../components/blog/Blogs";
 import Brands from "../components/brand/Brands";
 import CampaignSingle from "../components/campaignSingle/CampaignSingle";
 import Policy from "../components/policy/Policy";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const HomePage: React.FC = () => {
   return (
@@ -19,7 +21,7 @@ const HomePage: React.FC = () => {
       <Blogs />
       <Brands />
       <CampaignSingle />
-      <Policy />
+      <Policy />  
     </>
   );
 };

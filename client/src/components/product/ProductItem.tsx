@@ -1,9 +1,13 @@
 import React from "react";
 import "./ProductItem.css";
 
-const ProductItem: React.FC = () => {
+interface IProps {
+  product: any
+}
+
+const ProductItem: React.FC<IProps> = ({product}) => {
   return (
-    <li className="product-item glide__slide glide__slide--active">
+    <div className="product-item glide__slide glide__slide--active">
       <div className="product-image">
         <a href="#">
           <img src="img/products/product1/1.png" alt="" className="img1" />
@@ -51,7 +55,7 @@ const ProductItem: React.FC = () => {
           </a>
         </div>
       </div>
-    </li>
+    </div>
   );
 };
 

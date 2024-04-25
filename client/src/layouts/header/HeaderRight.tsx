@@ -1,6 +1,10 @@
 import React from "react";
+import { useAppDispatch } from "../../redux/hooks";
+import { isSearchShowTrue } from "../../redux/slices/modelSlice";
 
 const HeaderRight: React.FC = () => {
+  const dispatch = useAppDispatch();
+  
   return (
     <div className="header-right">
       <div className="header-right-links">
@@ -8,7 +12,7 @@ const HeaderRight: React.FC = () => {
           <i className="bi bi-person"></i>
         </a>
         <button className="search-button">
-          <i className="bi bi-search"></i>
+          <i onClick={() => dispatch(isSearchShowTrue())} className="bi bi-search"></i>
         </button>
         <a href="#">
           <i className="bi bi-heart"></i>

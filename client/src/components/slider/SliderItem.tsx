@@ -1,8 +1,13 @@
-const SliderItem: React.FC = () => {
+
+interface IProps {
+  imgSrc: string
+}
+
+const SliderItem: React.FC<IProps> = ({imgSrc}) => {
     return (
       <div className="slider-item fade">
         <div className="slider-image">
-          <img src="img/slider/slider1.jpg" className="img-fluid" alt="" />
+          <img src={imgSrc} className="img-fluid" alt="" />
         </div>
         <div className="container">
           <p className="slider-title">SUMMER 2022</p>
